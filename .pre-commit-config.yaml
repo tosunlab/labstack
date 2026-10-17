@@ -1,0 +1,41 @@
+default_install_hook_types: [pre-commit, commit-msg]
+default_stages: [pre-commit]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-json
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+
+  - repo: local
+    hooks:
+      - id: labstack-privacy
+        name: privacy (personal paths, local workspace, archives)
+        entry: python scripts/check_privacy.py
+        language: python
+        exclude: ^(scripts/check_privacy\.py|\.gitignore)$
+      - id: labstack-portability
+        name: portability (no harness-specific text in shipped skills)
+        entry: python scripts/check_portability.py
+        language: python
+        files: ^(skills|agents|commands)/.*\.md$
+      - id: labstack-commit-msg
+        name: commit message privacy
+        entry: python scripts/check_privacy.py --commit-msg
+        language: python
+        stages: [commit-msg]

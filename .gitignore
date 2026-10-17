@@ -1,0 +1,18 @@
+# Local working material. Never committed.
+/scratch/
+
+# Archives never belong in history.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# OS / editor / tooling
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*

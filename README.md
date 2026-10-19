@@ -101,11 +101,13 @@ Early. lab-mode, three playbooks, and the six principles are written and have be
 
 ### Next steps
 
-1. **Use it on real requests.** Two or three real literature, benchmark, and reproduction tasks, then fix what goes wrong. Nothing else changes before this.
-2. **Test lab-mode itself.** Trial tasks with traps: a decision that should go to the supervisor, or a tempting action the request doesn't allow. Check what the agent actually did, and whether its questions were needed. On real tasks, track how much of the supervisor's time each hand-back takes to read and correct.
-3. **More playbooks:** running experiments and judging results, writing, review (only when asked for), proofs, ideation, debugging, figures and slides.
-4. **Research versions of general agent skills** adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack): explaining how something works, finding why something happened, an independent review run only when the supervisor asks for one, and others.
-5. **More harnesses,** such as Codex.
+Each step is a GitHub issue with sub-issues for the pieces of work.
+
+1. **Use it on real requests** (#1). Two or three real literature, benchmark, and reproduction tasks, then fix what goes wrong. Nothing else changes before this.
+2. **Test lab-mode itself** (#6). Trial tasks with traps: a decision that should go to the supervisor, or a tempting action the request doesn't allow. Check what the agent actually did, and whether its questions were needed. On real tasks, track how much of the supervisor's time each hand-back takes to read and correct.
+3. **More playbooks** (#12): running experiments and judging results, writing, review (only when asked for), proofs, ideation, debugging, figures and slides.
+4. **Research versions of general agent skills** (#20) adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack): explaining how something works, finding why something happened, an independent review run only when the supervisor asks for one, and others.
+5. **More harnesses** (#33), such as Codex.
 
 ### What's missing
 

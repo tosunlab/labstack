@@ -63,6 +63,30 @@ Six short principles, each its own skill:
 5. **Answer first, in the supervisor's terms,** in about one screen.
 6. **Keep the process as small as the request.** One agent by default; no extra runs or checks you didn't ask for. The agent proposes extras in one line.
 
+### More skills
+
+Adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) for research (MIT; changes listed in [docs/pstack-port.md](./docs/pstack-port.md)):
+
+| Skill | Use it for |
+|---|---|
+| `how` | How a codebase, method, or paper's pipeline works. |
+| `why` | Why something is the way it is, from git history, notes, job and run logs, experiment trackers, and papers. Includes "why does our number differ from the paper?" |
+| `teach` | Understanding something properly, built from `how` and `why`. |
+| `recall` | Where things stand on a thread of work, before resuming it. |
+| `ketchup` | What changed in this chat since your last message, and what waits on you. |
+| `figure-it-out` | A large or multi-stage request no playbook covers: a designed plan, run step by step. |
+
+These run only when you ask for them:
+
+| Skill | Use it for |
+|---|---|
+| `interrogate` | Independent review of code, a result, an analysis, or a draft by several reviewers, ideally from different model families. |
+| `arena` | Several parallel attempts at one artifact; the best is picked and improved with the others' strong parts. |
+| `swarm` | Parallel workers over many items (papers, benchmarks, configs), merged into one report. |
+| `show-me-your-work` | A decision log for long or unattended work you review later. |
+| `reflect` | Turn a session's lessons into edits to your project notes or proposed skill changes. |
+| `correct` | Stop a mistake agents keep repeating in your repo, with a check instead of a reminder. |
+
 ## Install
 
 Claude Code:
@@ -81,7 +105,7 @@ omp:
 
 Then give the agent a task and say "lab mode", or call the skill directly (`/labstack:lab-mode` in Claude Code, `/skill:lab-mode` in omp).
 
-By default every part of the work runs on your current model. To use different models for different roles (for example, a strong model for judgment and a cheaper one for code), run `setup-labstack` once.
+By default every part of the work runs on your current model. To use different models for different roles (a strong model for judgment, a cheaper one for workers, and a panel of models from different families for `interrogate` and `arena`), run `setup-labstack` once.
 
 ## What's inside
 
@@ -89,15 +113,19 @@ By default every part of the work runs on your current model. To use different m
 skills/
   lab-mode/              entry point: rules for asking, autonomy, hand-back
     playbooks/           literature.md, benchmarks.md, reproduction.md
+    references/          environment.md (know the machine before running)
   principle-*/           the six principles
+  how/, why/, ...        the twelve skills adapted from pstack
   setup-labstack/        pick a model per role (optional)
 docs/harness/            how the skills map onto Claude Code and omp
+docs/pstack-port.md      every change from pstack, with its reason
+LICENSES/pstack.txt      pstack's MIT license
 SOURCES.md               the external sources the skills cite
 ```
 
 ## Status
 
-Early. lab-mode, three playbooks, and the six principles are written and have been tried on test requests in both harnesses. They have not yet been used on real research tasks.
+Early. lab-mode, three playbooks, the six principles, and the twelve skills adapted from pstack are written and load in both harnesses. They have not yet been used on real research tasks.
 
 ### Next steps
 
@@ -106,8 +134,7 @@ Each step is a GitHub issue with sub-issues for the pieces of work.
 1. **Use it on real requests** ([#1](https://github.com/tosunlab/labstack/issues/1)). Two or three real literature, benchmark, and reproduction tasks, then fix what goes wrong. Nothing else changes before this.
 2. **Test lab-mode itself** ([#6](https://github.com/tosunlab/labstack/issues/6)). Trial tasks with traps: a decision that should go to the supervisor, or a tempting action the request doesn't allow. Check what the agent actually did, and whether its questions were needed. On real tasks, track how much of the supervisor's time each hand-back takes to read and correct.
 3. **More playbooks** ([#12](https://github.com/tosunlab/labstack/issues/12)): running experiments and judging results, writing, review (only when asked for), proofs, ideation, debugging, figures and slides.
-4. **Research versions of general agent skills** ([#20](https://github.com/tosunlab/labstack/issues/20)) adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack): explaining how something works, finding why something happened, an independent review run only when the supervisor asks for one, and others.
-5. **More harnesses** ([#33](https://github.com/tosunlab/labstack/issues/33)), such as Codex.
+4. **More harnesses** ([#33](https://github.com/tosunlab/labstack/issues/33)), such as Codex.
 
 ### What's missing
 

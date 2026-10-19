@@ -36,7 +36,7 @@ When you ask:
 ## Autonomy
 
 - **Proceed** on reading, searching, writing code, and local reversible work.
-- **Propose in one line, do not run**: extra runs, smoke or reference runs, independent reviews, extra baselines or ablations, and any check the supervisor did not ask for.
+- **Propose in one line, do not run**: extra runs, smoke or reference runs, extra baselines or ablations, and any check the supervisor did not ask for. Independent review (`interrogate`) runs only when the supervisor asks for it; do not offer it.
 - **Fix your own bugs.** A defect in your own code, prompt, parser, or scorer may be fixed and rerun within the approved budget without asking. Tell the supervisor what you fixed and what you reran.
 - **Ask first**: spending beyond the approval, anything irreversible, and sending restricted data to an external model or tool, or credentials to anything other than the service they belong to (once per project).
 - The supervisor's raw data and files stay read-only. Work on copies and show the diff.
@@ -45,15 +45,30 @@ When you ask:
 
 ## Playbooks
 
-Match the request to one playbook, open it, and keep its steps as your todo list. A step you skip stays on the list with a one-line reason. No playbook fits: do the task under the principles.
+Match the request to one playbook, open it, and keep its steps as your todo list. A step you skip stays on the list with a one-line reason. No playbook fits: do a small task under the principles; for a large or multi-stage one, use the **figure-it-out** skill.
 
 - **Literature** (`playbooks/literature.md`). "Find me the papers on Y", "what is known about Z", "what is new on Y since <date>".
 - **Benchmarks** (`playbooks/benchmarks.md`). "Find the latest benchmarks for X, implement and run them", or run a named benchmark.
 - **Reproduction** (`playbooks/reproduction.md`). "Reproduce Table 2 of paper Z", or rerun a published baseline as specified.
 
+## Other skills
+
+Route to these when the request is that kind of request, never as an extra step:
+
+- **how**: how a codebase, method, or paper's pipeline works. **why**: why something is the way it is, from history, logs, trackers, and papers (including "why does our number differ from the paper"). **teach**: help the supervisor understand something, using both.
+- **recall**: where things stand on a thread of work, before resuming it. **ketchup**: what changed in this chat since the supervisor's last message.
+
+These run only when the supervisor asks for them by name or in plain words: **interrogate** (independent multi-model review), **arena** (parallel attempts at one artifact), **swarm** (parallel workers over many items), **show-me-your-work** (a decision trail for long or unattended work), **reflect** (turn a session's lessons into edits), **correct** (stop a repeated mistake for good).
+
 ## Roles
 
-Skills name roles, not models: **judgment** (planning, interpreting, writing to the supervisor), **code delegate** (implementation and runs), **review panel** (independent review, only when the supervisor asks for one). If `~/.config/labstack/models.yml` exists, read the section for your harness and use its model per role. A missing file or role means the session model.
+Skills name roles, not models:
+
+- **judgment**: planning, interpreting results, synthesizing, writing to the supervisor.
+- **worker**: delegated implementation, runs, searching, and reading (explorers, investigators, parallel workers).
+- **panel**: a list of models, one subagent per entry, for independent reviewers or parallel attempts. Entries from different model families give more independent signal.
+
+If `~/.config/labstack/models.yml` exists, read the section for your harness and use its model per role. A missing file or role means the session model. If a configured model is unavailable, use the session model and say so.
 
 When it is unclear how a step maps to your tools (asking, subagents, todo lists, model choice, finding bundled files), read `../../docs/harness/<your harness>.md` from this file.
 

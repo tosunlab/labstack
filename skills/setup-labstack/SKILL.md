@@ -1,6 +1,6 @@
 ---
 name: setup-labstack
-description: Choose which model labstack uses for each role (judgment, code delegate, review panel) in the current harness, and write the choice to the user's labstack config. Use for /setup-labstack, "configure labstack models", or changing labstack's model choices. Optional: without it every role runs on the session model.
+description: Choose which model labstack uses for each role (judgment, worker, panel) in the current harness, and write the choice to the user's labstack config. Use for /setup-labstack, "configure labstack models", or changing labstack's model choices. Optional: without it every role runs on the session model.
 ---
 
 # Setup labstack
@@ -9,9 +9,9 @@ Write the current harness's section of `~/.config/labstack/models.yml`. Without 
 
 ## Roles
 
-- **judgment**: planning, interpreting results, writing to the supervisor.
-- **code delegate**: implementation and runs handed to subagents.
-- **review panel**: independent review, only when the supervisor asks for one. A list; one reviewer runs per entry. A model family different from the one that did the work catches more.
+- **judgment**: planning, interpreting results, synthesizing, writing to the supervisor.
+- **worker**: delegated implementation, runs, searching, and reading (explorers, investigators, parallel workers). A faster, cheaper model often fits.
+- **panel**: a list; one subagent per entry, for independent reviewers (`interrogate`) and parallel attempts (`arena`). Entries from different model families catch more, because a model tends to favour its own family's work. With fewer than two entries, those skills run on the session model and say their reviewers share one family.
 
 ## Steps
 
@@ -24,8 +24,8 @@ Write the current harness's section of `~/.config/labstack/models.yml`. Without 
    ```yaml
    <harness>:
      judgment: <model>
-     code delegate: <model>
-     review panel: [<model>, <model>]
+     worker: <model>
+     panel: [<model>, <model>]
    ```
 
 6. **Confirm.** Tell the user what was written and that it applies to new lab-mode tasks. Running this skill again updates it.

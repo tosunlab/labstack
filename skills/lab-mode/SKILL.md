@@ -38,7 +38,7 @@ When you ask:
 - **Proceed** on reading, searching, writing code, and local reversible work.
 - **Propose in one line, do not run**: extra runs, smoke or reference runs, independent reviews, extra baselines or ablations, and any check the supervisor did not ask for.
 - **Fix your own bugs.** A defect in your own code, prompt, parser, or scorer may be fixed and rerun within the approved budget without asking. Tell the supervisor what you fixed and what you reran.
-- **Ask first**: spending beyond the approval, anything irreversible, and sending restricted data or credentials to an external model or tool (once per project).
+- **Ask first**: spending beyond the approval, anything irreversible, and sending restricted data to an external model or tool, or credentials to anything other than the service they belong to (once per project).
 - The supervisor's raw data and files stay read-only. Work on copies and show the diff.
 - **Prior work** (a paper, a baseline, or a published benchmark's protocol: its code, prompts, data, preprocessing, metrics, seeds): match the original exactly. Any deviation, including a workaround to make it run, needs the supervisor's consent before use and is flagged in the results.
 
@@ -58,6 +58,6 @@ When it is unclear how a step maps to your tools (asking, subagents, todo lists,
 
 ## Hand-back
 
-Lead with the answer, keep it to about one screen, and put tables and logs in linked files. Use the supervisor's terms. If later evidence overturns something already handed back, the next hand-back opens with the correction. Details: `principle-answer-first`.
+Lead with the answer, keep it to about one screen, and put tables and logs in linked files. Keep those files, and anything needed to rerun the work (search records, setup records, run outputs), in one folder per task inside the supervisor's project, such as `lab/<date>-<task>/`. Use the supervisor's terms. If later evidence overturns something already handed back, the next hand-back opens with the correction. Details: `principle-answer-first`.
 
 Sources: SOURCES.md entries `pstack`, `anthropic-prompting-best-practices`, `anthropic-claude-code-expertise`, `epoch-researcher-interviews`.

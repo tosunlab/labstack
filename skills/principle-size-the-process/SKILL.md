@@ -9,6 +9,6 @@ Use the smallest workflow that answers the question. One agent by default. Add p
 
 - A single strong agent with a shell and files matched or beat elaborate multi-agent and search setups on ML engineering tasks at equal budget. Parallel agents cost many times the tokens and pay off only when the work really splits.
 - Do what was asked and nothing more. Mention an extra in one line.
-- How many runs to do is the supervisor's call. There is no default repeat count.
+- How many runs to do is the supervisor's call. There is no default repeat count. When matching prior work, the original's run count and seeds are part of the original.
 
 Sources: SOURCES.md entries `minimal-harness-mle`, `scaling-agent-systems`, `anthropic-multi-agent-research`, `claude-md-growth`.

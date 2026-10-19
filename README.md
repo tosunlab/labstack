@@ -103,15 +103,15 @@ Early. lab-mode, three playbooks, and the six principles are written and have be
 
 Each step is a GitHub issue with sub-issues for the pieces of work.
 
-1. **Use it on real requests** (#1). Two or three real literature, benchmark, and reproduction tasks, then fix what goes wrong. Nothing else changes before this.
-2. **Test lab-mode itself** (#6). Trial tasks with traps: a decision that should go to the supervisor, or a tempting action the request doesn't allow. Check what the agent actually did, and whether its questions were needed. On real tasks, track how much of the supervisor's time each hand-back takes to read and correct.
-3. **More playbooks** (#12): running experiments and judging results, writing, review (only when asked for), proofs, ideation, debugging, figures and slides.
-4. **Research versions of general agent skills** (#20) adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack): explaining how something works, finding why something happened, an independent review run only when the supervisor asks for one, and others.
-5. **More harnesses** (#33), such as Codex.
+1. **Use it on real requests** ([#1](https://github.com/tosunlab/labstack/issues/1)). Two or three real literature, benchmark, and reproduction tasks, then fix what goes wrong. Nothing else changes before this.
+2. **Test lab-mode itself** ([#6](https://github.com/tosunlab/labstack/issues/6)). Trial tasks with traps: a decision that should go to the supervisor, or a tempting action the request doesn't allow. Check what the agent actually did, and whether its questions were needed. On real tasks, track how much of the supervisor's time each hand-back takes to read and correct.
+3. **More playbooks** ([#12](https://github.com/tosunlab/labstack/issues/12)): running experiments and judging results, writing, review (only when asked for), proofs, ideation, debugging, figures and slides.
+4. **Research versions of general agent skills** ([#20](https://github.com/tosunlab/labstack/issues/20)) adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack): explaining how something works, finding why something happened, an independent review run only when the supervisor asks for one, and others.
+5. **More harnesses** ([#33](https://github.com/tosunlab/labstack/issues/33)), such as Codex.
 
 ### What's missing
 
-These are areas where the sources say little, so the playbooks say little:
+These are areas where the sources say little, so the playbooks say little ([#36](https://github.com/tosunlab/labstack/issues/36)):
 
 - **Benchmarks outside LLM evaluation.** Vision, RL, systems, and science benchmarks.
 - **Cost estimates for API runs.** Predicting token and API spend before asking for a budget.

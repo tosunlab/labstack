@@ -2,9 +2,31 @@
 
 A skill stack for researchers who work with coding agents.
 
-You set the task; the agent does it with rigor and hands it back. `lab-mode` takes a scoped request such as "find the latest benchmarks for X, implement them, and run them" or "find me the papers on Y". It picks the playbook that fits, selects what matters most, verifies the result, and returns control to you. labstack is not an autonomous research pipeline.
+You set the task; the agent does it and hands it back. `lab-mode` takes a scoped request such as "find the latest benchmarks for X, implement them, and run them", "find me the papers on Y", or "reproduce Table 2 of paper Z". It routes the request to a playbook, works on its own, asks you only when a choice changes what the result means or costs, and leads its hand-back with the answer. labstack is not an autonomous research pipeline.
 
-**Status:** in development. No skills are released yet.
+**Status:** early. lab-mode with three playbooks (literature, benchmarks, reproduction) and six principles.
+
+## Install
+
+Claude Code:
+
+```
+/plugin marketplace add tosunlab/labstack
+/plugin install labstack@labstack
+```
+
+omp:
+
+```
+/marketplace add tosunlab/labstack
+/marketplace install labstack@labstack
+```
+
+Then start a task with `lab-mode`. Every role runs on your session model; run `setup-labstack` to pick models per role. Harness notes: [docs/harness](./docs/harness).
+
+## Design
+
+External sources behind the skills are in [SOURCES.md](./SOURCES.md).
 
 ## Contributing
 

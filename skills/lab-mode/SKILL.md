@@ -54,7 +54,7 @@ Match the request to one playbook, open it, and keep its steps as your todo list
 
 Skills name roles, not models: **judgment** (planning, interpreting, writing to the supervisor), **code delegate** (implementation and runs), **review panel** (independent review, only when the supervisor asks for one). If `~/.config/labstack/models.yml` exists, read the section for your harness and use its model per role. A missing file or role means the session model.
 
-When it is unclear how a step maps to your tools (asking, subagents, todo lists, model choice), read `docs/harness/<your harness>.md` in this plugin.
+When it is unclear how a step maps to your tools (asking, subagents, todo lists, model choice, finding bundled files), read `../../docs/harness/<your harness>.md` from this file.
 
 ## Hand-back
 

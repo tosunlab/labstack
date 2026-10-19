@@ -1,0 +1,15 @@
+{
+  "name": "labstack",
+  "owner": {
+    "name": "labstack contributors",
+    "url": "https://github.com/tosunlab/labstack"
+  },
+  "description": "A research skill stack for coding agents. The supervisor sets a scoped task; lab-mode routes it to a playbook, does it, and hands back.",
+  "plugins": [
+    {
+      "name": "labstack",
+      "source": "./",
+      "description": "lab-mode for supervisor-directed research: literature, benchmarks, reproduction."
+    }
+  ]
+}

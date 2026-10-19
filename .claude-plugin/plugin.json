@@ -1,0 +1,12 @@
+{
+  "name": "labstack",
+  "version": "0.1.0",
+  "description": "A research skill stack for coding agents. The supervisor sets a scoped task; lab-mode routes it to a playbook, does it, and hands back.",
+  "author": {
+    "name": "labstack contributors"
+  },
+  "homepage": "https://github.com/tosunlab/labstack",
+  "repository": "https://github.com/tosunlab/labstack",
+  "license": "MIT",
+  "keywords": ["research", "literature", "benchmarks", "reproduction", "skills"]
+}

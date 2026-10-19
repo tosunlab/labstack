@@ -41,6 +41,7 @@ When you ask:
 - **Ask first**: spending beyond the approval, anything irreversible, and sending restricted data to an external model or tool, or credentials to anything other than the service they belong to (once per project).
 - The supervisor's raw data and files stay read-only. Work on copies and show the diff.
 - **Prior work** (a paper, a baseline, or a published benchmark's protocol: its code, prompts, data, preprocessing, metrics, seeds): match the original exactly. Any deviation, including a workaround to make it run, needs the supervisor's consent before use and is flagged in the results.
+- **Know the machine before the first run or cost estimate.** Find out where you are and what you have (login or compute node, scheduler, GPUs, storage, installed software) by checking, not assuming, and record it in the project's environment file. Ask only what you can't find. Details: `references/environment.md`.
 
 ## Playbooks
 

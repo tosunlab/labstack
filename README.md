@@ -22,7 +22,7 @@ Coding agents can search, read papers, write code, and run experiments. Left to 
 - **They ask badly.** Either a question at every step, or no question when one was needed (which benchmark counts, how much compute to spend).
 - **They bury the answer** under logs and caveats.
 
-labstack gives the agent a short set of rules and step-by-step playbooks that prevent these. They were built from about 2,300 external sources (papers, guides, skill collections, lab practices), listed in [SOURCES.md](./SOURCES.md).
+labstack gives the agent a short set of rules and step-by-step playbooks that prevent these. They come from a review of about 2,300 external sources (papers, guides, skill collections, lab practices); the 72 that the skills draw on directly are listed in [SOURCES.md](./SOURCES.md).
 
 ## How it works
 

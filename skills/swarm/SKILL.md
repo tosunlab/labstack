@@ -37,4 +37,4 @@ Read the terminal results. Drop a result that does not record the exact inputs a
 
 Return one consolidated in-chat report with the table, issue one-liners, gaps or dropouts, and the race rule when used.
 
-Adapted from pstack's `swarm` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `swarm` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

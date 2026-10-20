@@ -33,4 +33,4 @@ An adjacent feature or ticket stays out unless it blocks this one. When the caps
 
 **Reply:** the brief, to the contract above.
 
-Adapted from pstack's `recall` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `recall` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

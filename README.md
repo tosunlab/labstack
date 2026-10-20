@@ -65,7 +65,7 @@ Six short principles, each its own skill:
 
 ### More skills
 
-Adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) for research (MIT; changes listed in [docs/pstack-port.md](./docs/pstack-port.md)):
+Adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) for research (MIT; license in [LICENSES/pstack.txt](./LICENSES/pstack.txt)):
 
 | Skill | Use it for |
 |---|---|
@@ -118,7 +118,6 @@ skills/
   how/, why/, ...        the twelve skills adapted from pstack
   setup-labstack/        pick a model per role (optional)
 docs/harness/            how the skills map onto Claude Code and omp
-docs/pstack-port.md      every change from pstack, with its reason
 LICENSES/pstack.txt      pstack's MIT license
 SOURCES.md               the external sources the skills cite
 ```
@@ -161,7 +160,6 @@ pre-commit install
 
 The hooks run on every commit:
 
-- **privacy**: no personal absolute paths, local working material, or archives.
 - **portability**: shipped skills contain no harness-specific tool names, config paths, or model names.
 - **secrets**: gitleaks and private-key detection.
 - **hygiene**: file size, whitespace, line endings, YAML and JSON syntax.

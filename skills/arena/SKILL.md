@@ -48,4 +48,4 @@ One synthesized artifact, with a short synthesis note alongside naming the base 
 
 Sources: SOURCES.md entries `llm-self-preference`.
 
-Adapted from pstack's `arena` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `arena` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

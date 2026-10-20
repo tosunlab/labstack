@@ -66,4 +66,4 @@ You are the lead reviewer, a pragmatic senior researcher, not a neutral aggregat
 
 Sources: SOURCES.md entries `llm-self-preference`, `ai-reviewers-expert-audit`, `mlr-bench`.
 
-Adapted from pstack's `interrogate` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `interrogate` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

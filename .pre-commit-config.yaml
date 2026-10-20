@@ -1,4 +1,4 @@
-default_install_hook_types: [pre-commit, commit-msg]
+default_install_hook_types: [pre-commit]
 default_stages: [pre-commit]
 
 repos:
@@ -24,18 +24,8 @@ repos:
 
   - repo: local
     hooks:
-      - id: labstack-privacy
-        name: privacy (personal paths, local workspace, archives)
-        entry: python scripts/check_privacy.py
-        language: python
-        exclude: ^(scripts/check_privacy\.py|\.gitignore)$
       - id: labstack-portability
         name: portability (no harness-specific text in shipped skills)
         entry: python scripts/check_portability.py
         language: python
         files: ^(skills|agents|commands)/.*\.md$
-      - id: labstack-commit-msg
-        name: commit message privacy
-        entry: python scripts/check_privacy.py --commit-msg
-        language: python
-        stages: [commit-msg]

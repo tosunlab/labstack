@@ -102,4 +102,4 @@ After Sources Consulted, if the user's `why` question is a precursor to changing
 
 Sources: SOURCES.md entries `slurm-docs`, `slurm-mcp`, `hf-jobs`, `wandb-agent-docs`, `wandb-mcp-server`, `mlflow-docs`, `tensorboard-docs`, `trackio`, `arxiv-versions`, `openreview-docs`, `openreview-mcp`, `reclaim`, `sacrebleu-clarity`, `olmes`.
 
-Adapted from pstack's `why` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `why` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

@@ -30,4 +30,4 @@ Last, keep a table in the agent instruction file that pairs each rule with what 
 
 **Reply:** each class with its evidence, the level you picked, and why a higher level didn't work.
 
-Adapted from pstack's `correct` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`. Changes for labstack are listed in `docs/pstack-port.md`.
+Adapted from pstack's `correct` skill (https://github.com/cursor/plugins/tree/main/pstack, version 0.15.28), Copyright (c) 2026 Lauren Tan, MIT License: see `LICENSES/pstack.txt`.

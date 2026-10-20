@@ -35,7 +35,7 @@ Read bundled files through the skill URI: `skill://lab-mode/playbooks/literature
 
 ## Transcripts
 
-Each session's transcript is a JSONL file under `~/.omp/agent/sessions/<project>/`, named `<timestamp>_<session-id>.jsonl`, where `<project>` is the project's path relative to the home directory with every `/` turned into `-` (so `~/Chore/lab` becomes `-Chore-lab`). A folder with the same name holds that session's tool-output logs. Find the current session by modification time. Read only the current project's folder unless the user asks for another.
+Each session's transcript is a JSONL file under `~/.omp/agent/sessions/<project>/`, named `<timestamp>_<session-id>.jsonl`, where `<project>` is the project's path relative to the home directory with every `/` turned into `-` (so `~/projects/lab` becomes `-projects-lab`). A folder with the same name holds that session's tool-output logs. Find the current session by modification time. Read only the current project's folder unless the user asks for another.
 
 ## Role models
 

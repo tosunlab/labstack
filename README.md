@@ -87,6 +87,18 @@ These run only when you ask for them:
 | `reflect` | Turn a session's lessons into edits to your project notes or proposed skill changes. |
 | `correct` | Stop a mistake agents keep repeating in your repo, with a check instead of a reminder. |
 
+### Personas
+
+One expert perspective each, called by name with what to look at: `/skill:reviewer-2 the draft in paper/` in omp, `/labstack:reviewer-2 the draft in paper/` in Claude Code. They run only when you ask. A persona is one viewpoint from one model; for independent review from several models, use `interrogate`.
+
+| Persona | Use it for |
+|---|---|
+| `reviewer-2` | The review a demanding reviewer at your target venue would write: ranked weaknesses, questions, a score, and what would flip it. |
+| `methodologist` | Whether an experiment, planned or done, can answer its question: does the metric measure the claim, does the comparison isolate the cause, would any outcome tell you something. |
+| `skeptic` | Trying to explain one result away (bugs, leakage, evaluation artifacts, unequal comparisons, selection, noise), each checked against the existing records. |
+| `advisor` | A step back on the project: the question, the story, the main risk, what to cut, and the next step. |
+| `editor` | Ranked edits to a draft for structure, clarity, and claims that match the evidence. |
+
 ## Install
 
 Claude Code:
@@ -116,6 +128,7 @@ skills/
     references/          environment.md (know the machine before running)
   principle-*/           the six principles
   how/, why/, ...        the twelve skills adapted from pstack
+  reviewer-2/, ...       five personas: reviewer-2, methodologist, skeptic, advisor, editor
   setup-labstack/        pick a model per role (optional)
 docs/harness/            how the skills map onto Claude Code and omp
 LICENSES/pstack.txt      pstack's MIT license
@@ -124,7 +137,7 @@ SOURCES.md               the external sources the skills cite
 
 ## Status
 
-Early. lab-mode, three playbooks, the six principles, and the twelve skills adapted from pstack are written and load in both harnesses. They have not yet been used on real research tasks.
+Early. lab-mode, three playbooks, the six principles, the twelve skills adapted from pstack, and five personas are written and load in both harnesses. They have not yet been used on real research tasks.
 
 ### Next steps
 

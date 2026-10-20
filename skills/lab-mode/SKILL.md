@@ -60,6 +60,8 @@ Route to these when the request is that kind of request, never as an extra step:
 
 These run only when the supervisor asks for them by name or in plain words: **interrogate** (independent multi-model review), **arena** (parallel attempts at one artifact), **swarm** (parallel workers over many items), **show-me-your-work** (a decision trail for long or unattended work), **reflect** (turn a session's lessons into edits), **correct** (stop a repeated mistake for good).
 
+Personas give one expert perspective, and also run only when the supervisor asks: **reviewer-2** (the review a venue would send back), **methodologist** (can this experiment answer its question), **skeptic** (try to explain a result away), **advisor** (direction, story, and the next step), **editor** (clarity, structure, and claims that match the evidence). A persona is one perspective, not independent review; that is **interrogate**.
+
 ## Roles
 
 Skills name roles, not models:
